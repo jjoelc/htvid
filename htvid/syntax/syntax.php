@@ -100,8 +100,8 @@ class syntax_plugin_htvid_video extends DokuWiki_Syntax_Plugin {
 *		
 *		if(!substr_count($video_url2, '/')) {
 *            $video_url2 = ml($video_url2,$abs=true);			
-*/        }
-
+*        }
+*/
         //set default video size if none given
         if(is_null($video_size) or !substr_count($video_size, 'x')) {
             $width  = 640;
