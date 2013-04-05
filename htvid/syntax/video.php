@@ -92,16 +92,16 @@ class syntax_plugin_htvid_video extends DokuWiki_Syntax_Plugin {
             return false;
         }
 
-/*	jw player doesn't seem to like the 'fetch.php=' links that the ml() function returns
-*   so disabling dokuwiki media style links for now...	
-*       if(!substr_count($video_url1, '/')) {
-*           $video_url1 = ml($video_url1,true,true);
-*       }
-*		
-*		if(!substr_count($video_url2, '/')) {
-*            $video_url2 = ml($video_url2,$abs=true);			
-*        }
-*/
+//	jw player doesn't seem to like the 'fetch.php=' links that the ml() function returns
+//   so disabling dokuwiki media style links for now...	
+       if(!substr_count($video_url1, '/')) {
+           $video_url1 = ml($video_url1,true,true);
+       }
+		
+		if(!substr_count($video_url2, '/')) {
+            $video_url2 = ml($video_url2,$abs=true);			
+        }
+
         //set default video size if none given
         if(is_null($video_size) or !substr_count($video_size, 'x')) {
             $width  = 640;
