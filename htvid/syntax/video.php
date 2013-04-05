@@ -93,7 +93,7 @@ class syntax_plugin_htvid_video extends DokuWiki_Syntax_Plugin {
         }
 
 //	jw player doesn't seem to like the 'fetch.php=' links that the ml() function returns
-//   so disabling dokuwiki media style links for now...	
+//   so can't use them, but plugin breaks without these calls...	
        if(!substr_count($video_url1, '/')) {
            $video_url1 = ml($video_url1,true,true);
        }
