@@ -1,0 +1,6 @@
+* Get someone else to adopt and maintain this! (volunteers feel free to contact me!)
+* Allow dokuwiki style media links instead of full url
+* allow better handling of 1 OR 2 OR 3 video filetypes (right now locked to only 2, 
+  will fail if you only list one without the extra pipe seperator.)
+*It appears this could all be replaced with an updated JWPlayer (6.0) but I'm unsure of licensing...
+  
